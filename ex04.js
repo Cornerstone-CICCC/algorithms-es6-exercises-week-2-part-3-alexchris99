@@ -5,12 +5,12 @@
 // Test your function by calculating the sum of the array 
 //and logging the result to the console.
 
+
 function sumOfDigits(n) {
-  if(n.length != 1){
-    sumOfDigits(n.length-1){
-      
-    }
+  if(n.length == 1){
+    return n[0]
   }
+  return n[0] += sumOfDigits(n.slice(1))
 }
 
 console.log(sumOfDigits([1, 3, 7, 1, 8])); // 20
